@@ -1,8 +1,5 @@
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.CountDownLatch;
 
 public class Library {
 
@@ -22,15 +19,6 @@ public class Library {
             }catch (Exception e){
                 e.printStackTrace();
             }
-//            if(listFlag){
-//                listFlag = false;
-//                try{
-//                    list.get(i).start();
-//                    listFlag = list.get(i).makesOfPhilosoph();
-//                }catch (Exception e){
-//                    e.printStackTrace();
-//                }
-//            }
         }
     }
 }

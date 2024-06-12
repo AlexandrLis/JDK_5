@@ -36,31 +36,19 @@ public class Philosoph extends Thread{
                     if(getNumberPhilosoph() == 0){
                         fork.makeFalse(fork.list.size() - 1, getNumberPhilosoph());
                         eat();
-                        System.out.println("До");
-                        me(fork);
                         fork.makeTrue(fork.list.size() - 1, getNumberPhilosoph());
-                        System.out.println("После");
-                        me(fork);
                         counter--;
                     }
                     else if (getNumberPhilosoph() == fork.list.size()) {
                         fork.makeFalse(getNumberPhilosoph(), 0);
                         eat();
-                        System.out.println("До");
-                        me(fork);
                         fork.makeTrue(getNumberPhilosoph(), 0);
-                        System.out.println("После");
-                        me(fork);
                         counter--;
                     }
                     else {
                         fork.makeFalse(getNumberPhilosoph() - 1, getNumberPhilosoph());
                         eat();
-                        System.out.println("До");
-                        me(fork);
                         fork.makeTrue(getNumberPhilosoph() - 1, getNumberPhilosoph());
-                        System.out.println("После");
-                        me(fork);
                         counter--;
                     }
                 }

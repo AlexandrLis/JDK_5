@@ -22,26 +22,14 @@ public class Main {
         Philosoph philosoph4 = new Philosoph(fork,"Николай", 3);
         Philosoph philosoph5 = new Philosoph(fork,"Павел", 4);
 
-
         library.addPhilosoph(philosoph1);
         library.addPhilosoph(philosoph2);
         library.addPhilosoph(philosoph3);
         library.addPhilosoph(philosoph4);
         library.addPhilosoph(philosoph5);
 
-        me(fork);
-
-
         library.tableStart();
 
-
-
-    }
-
-    public static void me(Fork fork){
-        for (Boolean b : fork.getForkList()) {
-            System.out.println(b);
-        }
     }
 }
 
