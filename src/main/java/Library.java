@@ -15,7 +15,7 @@ public class Library {
         for (int i = 0; i < 5; i++) {
             try{
                 list.get(i).start();
-                Thread.sleep(5000);
+//                Thread.sleep(5000);
             }catch (Exception e){
                 e.printStackTrace();
             }
